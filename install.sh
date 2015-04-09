@@ -34,9 +34,9 @@ set -x
 
 # install javauto
 mkdir /etc/javauto
-cp javauto.jar /etc/javauto/
-cp javauto-helper.jar /etc/javauto/
-cp javauto-lookup.jar /etc/javauto/
+cp jars/javauto.jar /etc/javauto/
+cp jars/javauto-helper.jar /etc/javauto/
+cp jars/javauto-lookup.jar /etc/javauto/
 
 # create our scripts to run it
 touch /etc/javauto/javauto
