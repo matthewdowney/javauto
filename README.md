@@ -1,7 +1,7 @@
 #Javauto
 Javauto is a programming language for automation. Derived from Java, it is a cross platform alternative to something like AutoIt.
 
-http://javauto.org/
+Website: http://javauto.org/
 
 #Installing
-http://javauto.org/docs/index.html
+Install Instructions: http://javauto.org/docs/getting-started.html
