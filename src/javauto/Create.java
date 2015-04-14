@@ -472,7 +472,12 @@ public class Create {
 		jaCodeLines = javautoCode.split("\n");
 		for (int i = 0; i < jaCodeLines.length; i++) {
 			if ( jaCodeLines[i].trim().startsWith("global ") ) {
+				boolean empty = false;
+				if (!jaCodeLines[i].trim().contains("="))
+					empty = true; // they're just declaring it, not assigning value
 				String[] declarationParts = jaCodeLines[i].trim().split(" ");
+				if (declarationParts[2].endsWith(";")) 
+					declarationParts[2] = declarationParts[2].substring(0, declarationParts[2].length()-1);
 				verbose(YELLOW + declarationParts[2] + " " + NORMAL, 0);
 				printedResults = true;
 				userGlobalVariables = userGlobalVariables + "public static " + declarationParts[1] + " " + declarationParts[2] + ";\n";
@@ -480,6 +485,8 @@ public class Create {
 				for (int j = 2; j < declarationParts.length; j++)
 					restOfDeclaration = restOfDeclaration + declarationParts[j] + " ";
 				jaCodeLines[i] = restOfDeclaration;
+				if (empty)
+					jaCodeLines[i] = "";
 			}
 		}
 		javautoCode = "";
