@@ -91,6 +91,17 @@ public class Create {
 			/* initialize the struct files as an empty array for potential user structs in this userCodeFile */
 			structFiles = new ArrayList<String[]>();
 
+			/* if it's not a file but a no-colors flag */
+			if (userCodeFile.equals("-nc") || userCodeFile.equals("--no-colors")) {
+				/* set all the colors to empty */
+				RED = ""; 
+				GREEN = ""; 
+				YELLOW = ""; 
+				BLUE = ""; 
+				NORMAL = ""; 
+				continue;
+			}
+
 			/* if it's not a file but a verbose flag */
 			if (userCodeFile.equals("-v") || userCodeFile.equals("--verbose")) {
 				/* set verbose to true and continue with next iteration */
