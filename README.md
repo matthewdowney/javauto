@@ -24,9 +24,11 @@ $ rm -rf javauto/
 ##Windows
 To install on Windows, you're going to need to [download the latest JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
 Done? Great. Now:
+
 1. Clone the repo or download a zip file and extract it.
 2. **Name this folder javauto and put it at your desired install location.** Program Files or simply the C:\ drive is recommended. 
 3. Once that's done open up the folder and double click the windows-installer.bat (you might have to run this as administrator).
+
 Now it's installed.
 
 ##Mac
