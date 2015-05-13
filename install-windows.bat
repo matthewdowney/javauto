@@ -17,6 +17,5 @@ echo @echo off > %JAR_DIRECTORY%javauto-lookup.bat
 echo %JAVAUTO_LOOKUP_FILE% >> %JAR_DIRECTORY%javauto-lookup.bat
 echo Adding %JAR_DIRECTORY% to the system path...
 setx path "%PATH%;%JAR_DIRECTORY%"
-echo
 echo Install completed successfully...
 pause 
