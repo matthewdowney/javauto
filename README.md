@@ -1,3 +1,6 @@
+#Deprecation Notice
+Javauto is no longer maintained at this respository.  We have moved things over to [a repository on our organization account](http://github.com/Javauto/javauto-core)
+
 #Javauto
 Javauto is a programming language for automation. Derived from Java, it is a cross platform alternative to something like AutoIt.
 
